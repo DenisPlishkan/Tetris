@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.our{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-btn{
+    padding: 22px;
+    margin: 0 auto;
+}
+
+.game {
+    padding-top: 20px;
+    font-size: 30px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.main {
+    position: absolute;
+    width: 320px;
+    height: 620px;
+    margin: 20px auto 0;
+    border: 10px solid silver;
+    font-size: 0;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    display: inline-block;
+}
+
+.movingCell {
+    background-color: blue;
+}
+
+.fixedCell{
+    background-color: green;
+}
+
+.next-tetro {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 0;
+}
+
+.game-over{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(255, 9, 9);
+    text-align: center;
+    display: none;
+    position: relative;
+    padding-top: 300px;
+}
+
+.arrow{
+    position: relative;
+    top: 640px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    display: none;
+}
+
+@media(max-width: 992px) {
+    .next-tetro{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .arrow{
+        display: block;
+        top: 600px;
+        margin: 0;
+    }
+    .cell{
+        width: 28px;
+        height: 28px;
+    }
+    .main{
+        width: 300px;
+        height: 580px;
+    }
+    .our{
+        width: 300px;
+    }
+    .our-btn{
+        margin: 0;
+    }
+    .btn-arrow{
+        padding: 10px 15px !important;
+        margin: 3px;;
+    }
+    .btn-up{
+        margin-bottom: 10px;
+    }
+}
